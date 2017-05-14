@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8">
+        <title>Weather Website</title>
+        <meta name="description" content="Short Description of the page.">
+        <meta name="viewport" content="width=device-width">
+    </head>
+    <body>
+        <header>
+            <h1>Weather Site Plan</h1>
+        </header>
+        <nav>
+            <a href="#">Home Page</a>
+            <hr>
+        </nav>
+        <main>
+            <h1>Site Purpose</h1>
+            <p>The client would like a web based weather app created. The purpose of the site is to give current weather conditions in 3 different ways.  The initial landing page will give the weather for the current location based on the Geocoding information given by the browser.  The second is weather for 3 specific locations accessible through a dedicated link, and the third is weather for any location determined by a search string.</p>
+            <h1>Target Audience</h1>
+            <p>Primary audience is adults ages 18-30.  Most will be students.  Access to the site will be split between mobile devices and laptops.</p>
+            <h2>Audience goals</h2>
+            <p>College students move around quite a bit so one goal would be to quickly get the weather conditions for their current location as they head off to class or study. They are also often far from their homes so the ability to quickly get the conditions for a specific location is important as well.  The third goal deals with planning for travels...the ability to get weather conditions for any location will help with last minute packing for road trips.</p>
+            <h2>Personas</h2>
+            <img src="cool-joe.jpg" alt="joe profile">
+<br>
+            <ul>
+                <li>Name: Joe Cool</li>
+                <li>Occupation: student</li>
+                <li>Age: undetermined</li>
+                <li>Interests: Traveling, seeing new things</li>
+                <li>Motivation: Joe is not into planning.  His last minute scrambling,<br> whether it is getting to class in the morning or heading out <br>
+                    on his latest adventure, has left him unprepared for weather<br>
+                    conditions many times (He is tired of sleeping in the rain<br>
+                    and snow).  He would like to be more prepared...without having<br>
+                    to put much effort into it...or planning.</li>
+                <li>Environment: Joe is comfortable using laptops and Mobile devices,<br> he will most often be found on a smart phone however.  Many <br>
+                    of the places he frequents do not have great signal…he is <br>
+                    often dealing with 3G speeds</li>
+            </ul>
+
+            <img src="lucy.jpg" alt="Lucy profile">
+            <br>
+            <ul>
+                <li>Name: Lucy Va  Pelt</li>
+                <li>Occupation: student</li>
+                <li>Age: 18</li>
+                <li>Interests: Giving advice, Psychology</li>
+                <li>Motivation: Lucy is a no nonsense young lady who likes to help<br> those around her.  She wants easy access to the weather conditions <br>
+                    for many locations so that she can always be prepared to offer <br>
+                    some unsolicited advice to her peers.</li>
+                <li>Environment: Lucy has a smart phone that she uses to keep her <br>
+                    eye on her social media ‘friends’.  She is usually not very far<br> from her trusty laptop however. Most of her time online is spent<br> either on the University network or the apartment broadband.</li>
+            </ul>
+            <h1>Content</h1>
+            <p>All weather pages should include Location name, temperature, high, low, current weather descriptor, precipitation, and wind on small, and hourly temps should be added on larger screens. (See provided weather data file for more details)</p>
+            <h2>Pages</h2>
+            <ol>
+                <li>Home: weather for the current location. Current location should be determined by using the Geolocation API of the browser.  This information should be passed to the WeatherUnderground API  <a href = "https://www.wunderground.com/weather/api/"> (https://www.wunderground.com/weather/api/)</a> to retrieve the current conditions. </li>
+                <li>Franklin, Greenville, Springfield: weather for each specific location. The weather for The Franklin and Greenville pages should be pulled from a local JSON file that will be provided.  </li>
+                <li>Search: Begins with only a search box, characters entered will cause a list of suggested matches to appear.  Selected location will pull up the weather. The search term from the field should be sent to the WeatherUnderground autocomplete API <a href = "https://www.wunderground.com/weather/api/d/docs?d=autocomplete-api&MR=1"> (https://www.wunderground.com/weather/api/d/docs?d=autocomplete-api&MR=1)</a>, and the results used to pull the current conditions for the selected location.</li>
+            </ol>
+            <h1>Styles</h1>
+            <h2>Branding</h2>
+            <p>The client provided the following initial concept for a name and logo:</p>
+            <img src="logo-blue.jpg" alt="Logo">
+            <h2>Typography</h2>
+            <p>The client also expressed interest in the following fonts:
+                <br>
+                Heading Font: Sansita From Google Fonts
+                <br>
+                <img src="sansita-alphabet.jpg" alt="heading">
+                <img src="sansita-heading.jpg" alt="head">
+                <br>
+                Body Copy Font: Helvetica
+                <br>
+                <img src="helvetica-alphabet.jpg" alt="bod">
+            </p>
+    <h2>Colors</h2>
+            <table border="1" align="center">
+                <tr>
+                    <td><img src="primary-swatch.jpeg" alt=""  height=60 width=130></td>
+                    <td><img src="secondary-swatch.jpeg" alt=""  height=60 width=130></td>
+                    <td><img src="accent1-swatch.jpeg" alt=""  height=60 width=130></td>
+                    <td><img src="accent2-swatch.jpeg" alt="" height=60 width=130></td>
+                </tr>
+                <tr>
+                    <th>Primary: #A6D8DB</th>
+                    <th>Secondary:#F07C6C</th>
+                    <th>Accent1: #E7EF61</th>
+                    <th>Accent2: #47556F</th>
+                </tr>
+            </table>
+            <h2>Elements</h2>
+            <h3>Navigation:</h3>
+            <img src="nav-bar.jpg" alt="bar">
+        <br>
+            <p>Link:normal : #4A4653<br>
+                Link:visited : #4A4653<br>
+                Link:hover :  #E7EF61<br>
+                Link:active :  #A6D8DB
+            </p>
+         <h3>Opaque rounded content box:</h3>
+            <img src="rounded-example.jpg" alt="box">
+            <p>    background-color: rgba(200,200,200,.6);<br>
+                margin: .2em auto;<br>
+                border: 1px solid;<br>
+                border-radius: 5px;
+            </p>
+            <h2>Wireframes</h2>
+            <h3>Small screen</h3>
+            <img src="wireframe-sm.jpg" alt="smallframe"><br>
+            <h3>Larger screen</h3>
+            <img src="wireframe-lg.jpg" alt="largeframe">
+        </main>
+        <footer>
+            <p><a href = "index.html" target = "_blank">Noelle's Home Page</a></p>
+            &copy;2017 Crazeforpink
+        </footer>
+    </body>
+</html>
