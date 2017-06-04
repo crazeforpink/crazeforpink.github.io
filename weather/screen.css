@@ -27,7 +27,7 @@
     }
 main {
     display: flex;
-    flex-flow: column nowrap;
+    flex-flow: column wrap;
     align-items: center;
     background-image: url("sunny-winter.jpg");
     background-size: cover;
@@ -46,7 +46,7 @@ nav {
     text-align: right;
     margin-top: -.7em;
 }
-.current {
+.currenttime {
     visibility: hidden;
 }
 
