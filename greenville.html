@@ -6,7 +6,7 @@
 <title>Greenville, ID | Weather site current</title>
 <meta name="greenville weather site" content=" A weather site that updates your weather and temperatures.">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
+
 <style>
 body{
 background-color: salmon;
@@ -30,16 +30,7 @@ list-style-type: none;
 margin: 0;
 padding: 0;
 }
-.menu li {
-padding: 8px;
-margin-bottom: 7px;
-background-color: green;
-color: #ffffff;
-box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-}
-.menu li:hover {
-background-color: #0099cc;
-}
+
 .currenttime {
 background-color: gray;
 padding: 15px;
@@ -97,7 +88,7 @@ width: 100%;
 .col-12 {width: 100%;}
 }
 </style>
-
+    </head>
 <main>
 
 <div class="title">
@@ -110,26 +101,30 @@ width: 100%;
 <div class="links">
 
 <p><a href = ""> Home </a>
-<a href = "franklin.html">Franklin </a>
+<a href = "json-weather.html/index.html"> Current Conditions </a>
+<a href = "weather/franklin.html">Franklin </a>
 <a href = "">Greenville </a>
 <a href = "">Springfield </a>
-<a href = "">Search</a></p>
+<a href = "search.html">Search</a></p>
 <hr>
 </div>
 
 
 <div class="col-3 col-m-3 menu">
-<div class="current">
-<h1>&#9924;Current Conditions</h1>
-<h3>Wind</h3>
-<p>1-5 MPH Southwest</p>
-<h3>Precipitation</h3>
-<p>0in</p>
-</div>
+    <div class="current">
+        <h2>Current Conditions</h2>
+        <ul id="current_conditions">
+            <li id="currentTemp"></li>
+            <li id="summary"></li>
+            <li id="add1"></li>
+            <li id="add2"></li>
+            <li id="add3"></li>
+        </ul>
+    </div>
 </div>
 <div class="row">
 <div class="col-6 col-m-9">
-<h1>&#9925;Franklin, ID</h1>
+<h1>&#9925;Greenville, ID</h1>
 <h2>17</h2>
 <p>&#9748;17/3<br>
 16<br>
@@ -154,6 +149,14 @@ width: 100%;
 <a  href="/index.html" title="Go to home page">Home</a>
 &copy;2017 Crazeforpink<br>
 </footer>
+
+    <script src="/jsonweather-html/scripts/jquery-3.0.0.min.js"></script>
+    <script src="/jsonweather-html/scripts/modules.js"></script>
+    <script src="/jsonweather-html/scripts/remote_wu.js"></script>
+
+    <script>
+        source = "jquery-3.2.1.min";
+    </script>
 </div>
 
 </html>
