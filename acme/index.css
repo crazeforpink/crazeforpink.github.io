@@ -22,7 +22,7 @@ nav a{
     color: white;
     text-decoration: none;
 }
-li{
+.imageText li{
     list-style-type: none;
 }
 
@@ -54,18 +54,23 @@ margin-top: -20em;
     font-family: sans-serif;
     font-size: 25pt;
 }
+/*image captions centered*/
 .heading{
     display: flex;
     flex-wrap: wrap;
+    text-align: center;
 
 }
 /*make the image captions be right*/
 figure figcaption{
     width: 140px;
-    text-align: center;
-
 }
-
+/* gray background behind images*/
+figure img{
+    background: gray;
+    padding-left: 2em;
+    padding-right: 2em;
+}
 .feature{
     width: 100%;
 }
@@ -75,4 +80,8 @@ width: 80%;
     background: white;
     margin-left: 10%;
 padding: 1em;
+}
+.reviews{
+    font-size: 19px;
+    font-family: sans-serif;
 }
