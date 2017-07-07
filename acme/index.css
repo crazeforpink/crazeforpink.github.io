@@ -1,0 +1,78 @@
+html{
+
+    background-image: url(images/site/background.jpg);
+        background-size: cover;
+    background-repeat: no-repeat;
+}
+
+nav ul{
+    background-color: red;
+    justify-content: space-between;
+    padding: 1em;
+}
+
+nav ul li{display:inline-flex;
+    justify-content: left;
+    justify-content: space-between;
+    margin-left: 3em;
+    font-family: sans-serif;
+    font-size: 18pt;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+}
+li{
+    list-style-type: none;
+}
+
+h1{
+    font-size: 35pt;
+margin-top: -.5em;
+    margin-bottom: -.1em;
+
+}
+h2{
+    margin: 0;
+}
+/* make images in grid*/
+.recipes{
+    display: flex;
+flex-flow: row wrap;
+    width: 40%;
+
+}
+.box{
+  display: flex;
+
+}
+.imageText{
+    color: red;
+    position: absolute;
+margin-top: -20em;
+    margin-left: 25em;
+    font-family: sans-serif;
+    font-size: 25pt;
+}
+.heading{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+/*make the image captions be right*/
+figure figcaption{
+    width: 140px;
+    text-align: center;
+
+}
+
+.feature{
+    width: 100%;
+}
+/*white body background*/
+body {
+width: 80%;
+    background: white;
+    margin-left: 10%;
+padding: 1em;
+}
