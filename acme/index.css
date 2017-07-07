@@ -85,3 +85,8 @@ padding: 1em;
     font-size: 19px;
     font-family: sans-serif;
 }
+footer{
+    text-align: center;
+    line-height: 55%;
+    border-top: 5px solid;
+}
