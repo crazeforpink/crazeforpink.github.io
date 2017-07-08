@@ -1,16 +1,22 @@
+
+
 html{
 
     background-image: url(images/site/background.jpg);
         background-size: cover;
     background-repeat: no-repeat;
 }
-
 nav ul{
     background-color: red;
     justify-content: space-between;
     padding: 1em;
+    /*make nav bar stay on screen for mobile
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    */
 }
-
 nav ul li{display:inline-flex;
     justify-content: left;
     justify-content: space-between;
@@ -25,12 +31,10 @@ nav a{
 .imageText li{
     list-style-type: none;
 }
-
 h1{
     font-size: 35pt;
 margin-top: -.5em;
     margin-bottom: -.1em;
-
 }
 h2{
     margin: 0;
@@ -40,16 +44,19 @@ h2{
     display: flex;
 flex-flow: row wrap;
     width: 40%;
-
+}
+.recipes h3{
+    font-size: 22pt;
+    font-family: sans-serif;
+    font-weight: 1000;
 }
 .box{
   display: flex;
-
 }
 .imageText{
     color: red;
     position: absolute;
-margin-top: -20em;
+    margin-top: -20em;
     margin-left: 25em;
     font-family: sans-serif;
     font-size: 25pt;
@@ -59,7 +66,6 @@ margin-top: -20em;
     display: flex;
     flex-wrap: wrap;
     text-align: center;
-
 }
 /*make the image captions be right*/
 figure figcaption{
@@ -76,10 +82,10 @@ figure img{
 }
 /*white body background*/
 body {
-width: 80%;
+    width: 80%;
     background: white;
     margin-left: 10%;
-padding: 1em;
+    padding: 1em;
 }
 .reviews{
     font-size: 19px;
@@ -87,6 +93,6 @@ padding: 1em;
 }
 footer{
     text-align: center;
-    line-height: 55%;
+    line-height: 100%;
     border-top: 5px solid;
 }
