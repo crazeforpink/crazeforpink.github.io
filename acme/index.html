@@ -5,25 +5,28 @@
     <link rel="stylesheet" type="text/css" href="index.css" />
     <meta charset="UTF-8" content=" A final project website for ACME with recipes.">
     <title>ACME</title>
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
+
     <header>
         <div id="logo">
             <img src="images/site/logo.png" alt="ACME logo">
         </div>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Anvils</a></li>
-                <li><a href="#">Explosives</a></li>
-                <li><a href="#">Decoys</a></li>
-                <li><a href="#">Traps</a></li>
+
+        <nav id="largenav">
+            <ul class="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><span id="anvils">Anvils</span></li>
+                <li><span id="explosives">Explosives</span></li>
+                <li><span id="decoys">Decoys</span></li>
+                <li><span id="traps">Traps</span></li>
+
             </ul>
         </nav>
     </header>
-
+    <div id="home-content">
     <main>
         <h1>Welcome to Acme!</h1>
         <div id="feature">
@@ -86,10 +89,29 @@
             </div>
         </div>
     </main>
-
+    </div>
+    <div id="product-content">
+        <h1 id="name"></h1>
+        <section id=square>
+            <section id="description"></section>
+            <section id="price"></section>
+            <section id="manufacturer"></section>
+            <section id="reviews"></section>
+            <img id="path" src="path" alt="#name">
+        </section>
+    </div>
     <footer>
         <p> &copy; 2017 ACME Inc. All rights reserved.</p>
         <p>All images used are believed to be in "Fair Use". Please notify the author if any are not and they will be removed.</p>
     </footer>
 </body>
+
+
+
+
+    <script
+            src="https://code.jquery.com/jquery-3.2.1.min.js"
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+            crossorigin="anonymous"></script>
+    <script src="js/acme.js"></script>
 </html>
