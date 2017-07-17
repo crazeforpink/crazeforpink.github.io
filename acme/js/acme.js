@@ -52,10 +52,10 @@ $.ajax({
             }
         });
         */
-
+$("title").text(name);
         $("#name").html(name);
        $("#description").html(description);
-        $("#path").html(path);
+        $("#path").css("background-image", "url(" + path + ")");
         $("#price").html(price);
         $("#manufacturer").html(manufacturer);
         $("#reviews").html(reviews);
